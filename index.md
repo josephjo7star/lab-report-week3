@@ -49,3 +49,9 @@ class SearchEngine {
         Server.start(port, new Handler());
     }
 ```
+![screenshot1](https://github.com/josephjo7star/lab-report-week3/blob/main/1.png)
+For this screnshot, I had just enter the link to the website, so it displays the default message, which is "please enter some strings"
+
+
+
+
