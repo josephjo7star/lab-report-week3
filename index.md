@@ -53,13 +53,22 @@ class SearchEngine {
 
 There is only one method(handleRequest), so for all four screenshots, this will be the only method ran. For this screnshot, I had just enter the link to the website, so it displays the default message, which is "please enter some strings"
 
+
+
+
 ![screenshot2](https://github.com/josephjo7star/lab-report-week3/blob/main/2.png)
 
 For this screenshot, I added a query and enters "anewstringtoadd" which tells the program that whatever strings I entered next will be added to the string. The program then displays"now you can add stuff"
 
+
+
+
 ![screenshot3](https://github.com/josephjo7star/lab-report-week3/blob/main/3.png)
 
 I then enters apple and the programs adds "apple" to its string, now it shows that I can search it and see what is in the string
+
+
+
 
 ![screenshot4](https://github.com/josephjo7star/lab-report-week3/blob/main/4.png)
 
