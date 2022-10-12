@@ -53,7 +53,7 @@ class SearchEngine {
 ***
 ![screenshot1](https://github.com/josephjo7star/lab-report-week3/blob/main/1.png)
 
-There is only one method(handleRequest), so for all four screenshots, this will be the only method ran. For this screnshot, I had just enter the link to the website, so it displays the default message, which is "please enter some strings"
+There are two methods(handleRequest, and main). For this screnshot, both methods were ran. I had just enter the link to the website, so it displays the default message, which is "please enter some strings"
 
 ***
 ![screenshot2](https://github.com/josephjo7star/lab-report-week3/blob/main/2.png)
