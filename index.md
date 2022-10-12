@@ -59,4 +59,8 @@ For this screenshot, I added a query and enters "anewstringtoadd" which tells th
 
 ![screenshot3](https://github.com/josephjo7star/lab-report-week3/blob/main/3.png)
 
-I then enters apple and the program says 
+I then enters apple and the programs adds "apple" to its string, now it shows that I can search it and see what is in the string
+
+![screenshot4](https://github.com/josephjo7star/lab-report-week3/blob/main/4.png)
+
+I refresh the page 4 times which adds "apple" four times, I then enters "/search" and now the program displays the string
