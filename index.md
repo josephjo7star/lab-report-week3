@@ -58,17 +58,17 @@ There are two methods(handleRequest, and main). For this screnshot, both methods
 ***
 ![screenshot2](https://github.com/josephjo7star/lab-report-week3/blob/main/2.png)
 
-For this screenshot, I added a query and enters "anewstringtoadd" which tells the program that whatever strings I entered next will be added to the string. The program then displays"now you can add stuff"
+For this screenshot, handleRequest method was called. I added a query and enters "anewstringtoadd" which stores "anewstringtoadd" to parameter[1], which changed the boolean "check" to "true", and that tells the program that whatever strings I entered next will be added to the string. The program then displays "now you can add stuff"
 
 ***
 ![screenshot3](https://github.com/josephjo7star/lab-report-week3/blob/main/3.png)
 
-I then enters apple and the programs adds "apple" to its string, now it shows that I can search it and see what is in the string
+For this screenshot, handleRequest was called. I enters apple and the programs adds "apple" to its string "str", now it displays that I can search it and see what is in the string
 
 ***
 ![screenshot4](https://github.com/josephjo7star/lab-report-week3/blob/main/4.png)
 
-I refresh the page 4 times which adds "apple" four times, I then enters "/search" and now the program displays the string
+handleRequest was still called for this screenshot. I refresh the page 3 times which adds "apple" three more times to "str", I then enters "/search" and now the program displays the string
 
 # Part 2:
 ### bug 1 input
