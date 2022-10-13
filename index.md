@@ -219,4 +219,4 @@ static List<String> merge(List<String> list1, List<String> list2) {
   } 
 ```
 ### bug 2 explaination
-This program checks for both index1 and index2 and they must be both equal to the length of their respective list in order for the loop to stop running. However, if we finished sorting list1 but not with list2, this loop cannot stop and will run forever because there isn't any chances to increase index2 to make the conditional false.
+This program checks for both index1 and index2 and they must be both equal to the length of their respective list in order for the loop to stop running. However, if we finished sorting list1 but not with list2, this loop cannot stop and will run forever because there isn't any chances to increase index2 to make the conditional false. What I do to fix it is that I first load every elements to a new arraylist, then I sort the arraylist in order and put them into another new arraylist. Then I return arraylist2.
