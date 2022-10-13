@@ -188,25 +188,35 @@ static List<String> merge(List<String> list1, List<String> list2) {
 ```ruby
 static List<String> merge(List<String> list1, List<String> list2) {
     List<String> result = new ArrayList<>();
+    List<String> result2 = new ArrayList<>();
     int index1 = 0, index2 = 0;
-    while(index1 < list1.size() && index2 < list2.size()) {
-      if(list1.get(index1).compareTo(list2.get(index2)) < 0) {
-        result.add(list1.get(index1));
-        index1 += 1;
-      }
-      else {
-        result.add(list2.get(index2));
-        index2 += 1;
-      }
-    }
+
     while(index1 < list1.size()) {
-      result.add(list1.get(index1));
-      index1 += 1;
+    result.add(list1.get(index1));
+    index1 += 1;
     }
     while(index2 < list2.size()) {
-      result.add(list2.get(index2));
-      index1 += 1;
+    result.add(list2.get(index2));
+    index2 += 1;
     }
-    return result;
-  }
+    int index3 = 0;
+    String temp = result.get(0);
+    int size = result.size();
+
+    while(index3 < size){
+      for(int i = 0; i <result.size(); i ++) {
+        if (temp.compareTo(result.get(i)) > 0){
+          temp = result.get(i);
+        } 
+      }
+      result2.add(temp);
+      result.remove(temp);
+      if (result.size() != 0)
+        temp = result.get(0);
+      index3 ++;
+    }
+    return result2;
+  } 
 ```
+### bug 2 explaination
+This program checks for both index1 and index2 and they must be both equal to the length of their respective list in order for the loop to stop running. However, if we finished sorting list1 but not with list2, this loop cannot stop and will run forever because there isn't any chances to increase index2 to make the conditional false.
